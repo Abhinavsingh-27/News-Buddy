@@ -50,7 +50,10 @@ const News = (props) => {
   
     return (
       <>
-        <h1 className="text-center " style={{marginTop:"90px", marginBottom:"30px"}}>NewsApp-Top {capitalizeFirstLetter(props.category)} Headlines</h1>
+        <h1 className="text-center " style={{marginTop:"90px", fontWeight:"bolder"}}> Welcome to News Buddy! </h1>
+        <br></br>
+        <h1 className="text-center " style={{ marginBottom:"30px", fontWeight:"bolder"}}> {capitalizeFirstLetter(props.category)} News for you</h1>
+
         {/* {loading && <Spinner />} */}
         <InfiniteScroll
           dataLength={articles.length}
